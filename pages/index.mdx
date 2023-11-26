@@ -1,11 +1,40 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+# What is Vigma RN?
 
-## What is Nextra?
+Vigma RN is a Fimga-like VS-Code extension, but with real-time codegen for React Native (Expo).
+It's now in closed beta. You can fill out this [form](https://forms.gle/yoVn3v3kf9ysmHBr5) to get an early access.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+## Features
 
-## Documentation
+### Screenshot to Code (New!)
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+Drop an image, and get the code for it.
+
+### Real-time Design to Code
+
+Draw UI, and see the code generated in VS-Code.
+
+<video width='100%' controls muted>
+  <source src='/videos/PersonCard.webm' type='video/webm' />
+</video>
+
+### Independent Component Rendering
+
+Components can be rendered independently. Storybook(CSF 2.0 & 3.0) support.[^1]
+
+### Code Pointing
+
+Double click an element from the Layer Explorer, and the corresponding code will be highlighted.
+
+<video width='100%' controls muted>
+  <source src='/videos/CodePointing.webm' type='video/webm' />
+</video>
+
+### UI Pointing
+
+Place your cursor on any Jsx element, and the corresponding element will be markde in UI.
+
+<video width='100%' controls muted>
+  <source src='/videos/UiPointing.webm' type='video/webm' />
+</video>
+
+[^1]: Only simple storybook is supported. No knobs, no actions. The storybook file should have the same basename as the component file. For example, if you have a component file `PersonCard.tsx`, the storybook file should be `PersonCard.stories.tsx`
