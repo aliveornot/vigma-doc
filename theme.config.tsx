@@ -16,10 +16,15 @@ const config: DocsThemeConfig = {
   editLink: {
     text: 'Edit this page on GitHub',
     component: ({ className, filePath }) => (
-      <a className={className} href={`https://github.com/aliveornot/vigma-doc/${filePath}`}>
+      <a className={className} href={`https://github.com/aliveornot/vigma-doc/tree/main/${filePath}`}>
         edit this page on github
       </a>
     ),
+  },
+  feedback: {
+    content: 'Is this page helpful?',
+    labels: 'feedback',
+    useLink: () => 'https://github.com/aliveornot/vigma-doc/issues/new',
   },
 };
 

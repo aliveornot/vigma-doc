@@ -1,5 +1,7 @@
 {
   "index": "Introduction",
+  "getting_started": "Getting Started",
+  "more": "More",
   "about": {
     "title": "About",
     "type": "page"

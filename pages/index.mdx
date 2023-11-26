@@ -3,38 +3,70 @@
 Vigma RN is a Fimga-like VS-Code extension, but with real-time codegen for React Native (Expo).
 It's now in closed beta. You can fill out this [form](https://forms.gle/yoVn3v3kf9ysmHBr5) to get an early access.
 
+It can:
+
+- [Make screenshots into code](#screenshot_to_code)
+- [Generate code from design](#real_time_design_to_code)
+- [Render components independently](#independent_component_rendering)
+- [Pinpoint code from UI](#code_pointing)
+- [Pinpoint UI from code](#ui_pointing)
+- [Figma to Code](#figma_to_code)
+
 ## Features
 
-### Screenshot to Code (New!)
+### Screenshot to Code (New!) [#screenshot_to_code]
 
-Drop an image, and get the code for it.
+Drop an image, and get the code for it. (Read more about [Screenshot to Code](/screenshot_to_code))
 
-### Real-time Design to Code
+<video width='100%' controls muted loop>
+  <source src='/videos/ScreenshotToCode.webm' type='video/webm' />
+</video>
+<br />
+<br />
+
+### Real-time Design to Code [#real_time_design_to_code]
 
 Draw UI, and see the code generated in VS-Code.
 
-<video width='100%' controls muted>
+<video width='100%' controls muted loop>
   <source src='/videos/PersonCard.webm' type='video/webm' />
 </video>
+<br />
 
-### Independent Component Rendering
+Of course, you can always work from the code side, in the traditional way.
 
-Components can be rendered independently. Storybook(CSF 2.0 & 3.0) support.[^1]
+<video width='100%' controls muted loop>
+  <source src='/videos/CodeToUi.webm' type='video/webm' />
+</video>
+<br />
+<br />
 
-### Code Pointing
+### Code Pointing [#code_pointing]
 
 Double click an element from the Layer Explorer, and the corresponding code will be highlighted.
 
-<video width='100%' controls muted>
+<video width='100%' controls muted loop>
   <source src='/videos/CodePointing.webm' type='video/webm' />
 </video>
+<br />
+<br />
 
-### UI Pointing
+### UI Pointing [#ui_pointing]
 
 Place your cursor on any Jsx element, and the corresponding element will be markde in UI.
 
-<video width='100%' controls muted>
+<video width='100%' controls muted loop>
   <source src='/videos/UiPointing.webm' type='video/webm' />
 </video>
+<br />
+<br />
+
+### Independent Component Rendering [#independent_component_rendering]
+
+Components can be rendered independently. Storybook(CSF 2.0 & 3.0) support.[^1]
+
+### Figma to Code [#figma_to_code]
+
+By installing VigmaRN, the [**Figma-plugin**](https://www.figma.com/community/plugin/1260477949715606742/vigma-rn), you can export your Figma design into code. See more about [Figma to Code](/figma_to_code)
 
 [^1]: Only simple storybook is supported. No knobs, no actions. The storybook file should have the same basename as the component file. For example, if you have a component file `PersonCard.tsx`, the storybook file should be `PersonCard.stories.tsx`
