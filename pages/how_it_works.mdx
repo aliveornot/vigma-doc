@@ -1,0 +1,18 @@
+# How it works under the hood
+
+This is how the extension works under the hood. It's not necessary to read this to use the extension, but it might be interesting to some.
+
+### The extension operates by:
+
+1. Creating a temporary copy of the current file.
+2. Integrating this copy with a GUI editor app.
+3. Bundling the file using rs-pack, a new webpack-compatible tool.
+4. Running the bundle with rspack-dev-server.
+
+### When you make a change inside the GUI editor:
+
+1. Direct modifications are made to the HTML DOM (not Virtual DOM).
+2. The source code in the text editor is updated to reflect these changes, without directly saving them to the file.
+
+The main challenge in developing this extension was ensuring synchronization between the GUI changes and the code updates, and **it's not yet perfect**.
+If you notice any differences between the GUI and the code, please [report](https://github.com/aliveornot/vigma-doc/issues/new).
