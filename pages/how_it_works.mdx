@@ -16,3 +16,11 @@ This is how the extension works under the hood. It's not necessary to read this 
 
 The main challenge in developing this extension was ensuring synchronization between the GUI changes and the code updates, and **it's far from being perfect even now**.
 If you notice any differences between the GUI and the code, please [report](https://github.com/aliveornot/vigma-doc/issues/new).
+
+### pre-installed modules
+
+Following npm packages are pre-installed in the extension, because they are likely to be used. If you have the package in your repo, the bundler will resolve it from your repo, not from the extension. Even if you don't have the package, UIs that depends on these packages will work **inside Vigma RN Editor**. (But it'll fail to build in your repo)
+
+- `react-native-web`
+- `react-native-svg`
+- `@expo/vector-icons`

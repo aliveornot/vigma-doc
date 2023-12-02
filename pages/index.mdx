@@ -2,7 +2,7 @@
 
 ## Figma-like VS-Code extension w/ real-time codegen
 
-Vigma RN is a Fimga-like VS-Code extension, but with real-time codegen for React Native (Expo).
+Vigma RN is a Fimga-like VS-Code extension, but with real-time codegen for React Native (Expo)[^1].
 It's now in closed beta. You can fill out this [form](https://forms.gle/yoVn3v3kf9ysmHBr5) to get early access.
 
 It can:
@@ -66,7 +66,7 @@ Place your cursor on any Jsx element, and the corresponding element will be mark
 
 ### Independent Component Rendering [#independent_component_rendering]
 
-Components can be rendered independently, with Storybook (CSF 2.0 & 3.0) support.[^1]
+Components can be rendered independently, with Storybook (CSF 2.0 & 3.0) support.[^2]
 
 <video width='100%' controls muted loop>
   <source src='/videos/storybookSupport.webm' type='video/webm' />
@@ -88,4 +88,5 @@ If you don't have a storybook, AI will generate one for you.
 
 By installing VigmaRN [**Figma-plugin**](https://www.figma.com/community/plugin/1260477949715606742/vigma-rn), you can export your Figma design into code. See more about [Figma to Code](/more/figma_to_code)
 
-[^1]: Only simple storybook is supported. No knobs, no actions. The storybook file should have the same basename as the component file. For example, if you have a component file `PersonCard.tsx`, the storybook file should be `PersonCard.stories.tsx`
+[^1]: It relies on React-Native-Web to render the component. So it's not a 100% accurate representation of how it will look on a mobile devices. But it should be close enough for most cases.
+[^2]: Only simple storybook is supported. No knobs, no actions. The storybook file should have the same basename as the component file. For example, if you have a component file `PersonCard.tsx`, the storybook file should be `PersonCard.stories.tsx`
