@@ -20,7 +20,7 @@ const DynamicContent = () => {
       <br />
       <span style={{ color: 'yellow' }}>
         &nbsp; email: hacker@news.com <br />
-        &nbsp; password: hackers
+        &nbsp; secretKey: hackers
       </span>{' '}
       <br />
       for login.
