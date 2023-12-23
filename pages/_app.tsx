@@ -4,7 +4,6 @@ import Head from 'next/head';
 type AppOwnProps = { example: string };
 
 export default function MyApp({ Component, pageProps, example }: AppProps & AppOwnProps) {
-  console.log(1);
   return (
     <>
       <Head>
