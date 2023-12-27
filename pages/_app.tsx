@@ -1,6 +1,6 @@
 import App, { AppContext, AppInitialProps, AppProps } from 'next/app';
 import Head from 'next/head';
-
+import Script from 'next/script';
 type AppOwnProps = { example: string };
 
 export default function MyApp({ Component, pageProps, example }: AppProps & AppOwnProps) {
@@ -8,7 +8,7 @@ export default function MyApp({ Component, pageProps, example }: AppProps & AppO
     <>
       <Head>
         {/* X pixel */}
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
             !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},
