@@ -29,6 +29,7 @@ export function InstallLink({ target, children }: PropsWithChildren<{ target: 'm
     <a
       href={'https://marketplace.visualstudio.com/items?itemName=n3rds-inc.rnflow'}
       onClick={onClick}
+      target={'_blank'}
       rel='noopener noreferrer'
       style={{ textDecoration: 'underline', color: isLightTheme ? '#008ae6' : '#006be6' }}
     >
