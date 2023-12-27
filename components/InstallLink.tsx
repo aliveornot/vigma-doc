@@ -22,7 +22,7 @@ export function InstallLink({ target, children }: PropsWithChildren<{ target: 'm
 
   function onClick(e) {
     if (window.twq) window.twq('event', 'tw-oi36s-oibrl');
-    window.open('vscode:extension/n3rds-inc.rnflow', '_blank');
+    window.open('vscode:extension/n3rds-inc.rnflow');
   }
 
   return (
