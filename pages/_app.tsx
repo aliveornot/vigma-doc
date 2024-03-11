@@ -9,6 +9,7 @@ export default function MyApp({ Component, pageProps, example }: AppProps & AppO
       <Head>
         {/* X pixel */}
         <Script
+          type='text/javascript'
           dangerouslySetInnerHTML={{
             __html: `
             !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);},
@@ -21,6 +22,7 @@ export default function MyApp({ Component, pageProps, example }: AppProps & AppO
         />
         {/* reddit pixel */}
         <Script
+          type='text/javascript'
           dangerouslySetInnerHTML={{
             __html: `!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_elzcxjtsr2up', {"aaid":"<AAID-HERE>","email":"<EMAIL-HERE>","externalId":"<EXTERNAL-ID-HERE>","idfa":"<IDFA-HERE>"});rdt('track', 'PageVisit');
             `,
@@ -28,6 +30,7 @@ export default function MyApp({ Component, pageProps, example }: AppProps & AppO
         />
         {/* clarity */}
         <Script
+          type='text/javascript'
           dangerouslySetInnerHTML={{
             __html: ` (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
