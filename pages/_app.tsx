@@ -1,14 +1,35 @@
 import App, { AppContext, AppInitialProps, AppProps } from 'next/app';
 import Head from 'next/head';
 import Script from 'next/script';
+import { useEffect } from 'react';
 type AppOwnProps = { example: string };
 
 export default function MyApp({ Component, pageProps, example }: AppProps & AppOwnProps) {
+  useEffect(() => {
+    //clarity analytics
+    (function () {
+      const clarityId = 'lexwqu5vr6';
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = 'https://www.clarity.ms/tag/' + clarityId;
+
+      window['clarity'] =
+        window['clarity'] ||
+        function () {
+          (window['clarity'].q = window['clarity'].q || []).push(arguments);
+        };
+
+      const head = document.head || document.getElementsByTagName('head')[0];
+      head.appendChild(script);
+    })();
+  }, []);
   return (
     <>
       <Head>
         {/* X pixel */}
         <Script
+          id='x-pixel'
           type='text/javascript'
           dangerouslySetInnerHTML={{
             __html: `
@@ -22,6 +43,7 @@ export default function MyApp({ Component, pageProps, example }: AppProps & AppO
         />
         {/* reddit pixel */}
         <Script
+          id='reddit-pixel'
           type='text/javascript'
           dangerouslySetInnerHTML={{
             __html: `!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_elzcxjtsr2up', {"aaid":"<AAID-HERE>","email":"<EMAIL-HERE>","externalId":"<EXTERNAL-ID-HERE>","idfa":"<IDFA-HERE>"});rdt('track', 'PageVisit');
@@ -30,6 +52,7 @@ export default function MyApp({ Component, pageProps, example }: AppProps & AppO
         />
         {/* clarity */}
         <Script
+          id='clarity'
           type='text/javascript'
           dangerouslySetInnerHTML={{
             __html: `(function(c,l,a,r,i,t,y){
