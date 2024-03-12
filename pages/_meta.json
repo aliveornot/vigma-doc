@@ -1,5 +1,5 @@
 {
-  "index": "Introduction",
+  "index": "What is it?",
   "getting_started": "Getting Started",
   "basic_instructions": "Basic Instructions",
   "how_it_works": "How it Works",
@@ -7,5 +7,11 @@
   "about": {
     "title": "About",
     "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/aliveornot",
+    "newWindow": true
   }
 }
