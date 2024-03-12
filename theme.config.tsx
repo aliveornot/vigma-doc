@@ -3,9 +3,9 @@ import { DocsThemeConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
   logo: <span>Vigma RN</span>,
-  project: {
-    link: 'https://github.com/aliveornot/vigma-doc',
-  },
+  // project: {
+  //   link: 'https://github.com/aliveornot/vigma-doc',
+  // },
   // chat: {
   //   link: 'https://discord.com',
   // },
